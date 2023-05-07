@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5435" started-at="2023-04-30T00:54:26Z" finished-at="2023-04-30T00:54:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5435" started-at="2023-04-30T00:54:26Z" finished-at="2023-04-30T00:54:31Z">
+      <class name="UnitTesting_API.common_functions">
+        <test-method status="PASS" signature="getMethod()[pri:0, instance:UnitTesting_API.common_functions@ed7f8b4]" name="getMethod" duration-ms="5386" started-at="2023-04-30T00:54:26Z" finished-at="2023-04-30T00:54:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethod -->
+      </class> <!-- UnitTesting_API.common_functions -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

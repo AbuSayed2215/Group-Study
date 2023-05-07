@@ -1,0 +1,14 @@
+package com.curd.function;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class ReadData {
+	
+	public static void getsetUp() {
+		Response response = RestAssured.get("https://httpbinbin.org/get");
+		response.prettyPrint();
+		
+	}
+
+}

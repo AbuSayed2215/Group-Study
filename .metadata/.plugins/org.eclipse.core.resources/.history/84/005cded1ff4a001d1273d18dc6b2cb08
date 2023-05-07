@@ -1,0 +1,72 @@
+package com.smarttechqa.stepdef;
+
+import java.io.IOException;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.smarttechqa.utils.Utilities;
+
+import SmartTechQA.BaseClass;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import junit.framework.Assert;
+
+public class LoginStepDefination extends BaseClass {
+	
+
+
+	
+
+	@Given("User opens the browser")
+	public void user_opens_the_browser() throws InterruptedException, IOException {
+		
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+		driver = new ChromeDriver();
+		BaseClass.SetUp();
+	    
+	  
+	}
+
+	@Given("User navigates to {string}")
+	public void user_navigates_to(String string) {
+		driver.get("https://www.smarttechqa.com/");
+	  
+	}
+
+	@When("User clicks on the sign in button")
+	public void user_clicks_on_the_sign_in_button() {
+		driver.findElement(By.xpath("//a[@href='/login']")).click();
+	}
+
+	@When("User enters the email")
+	public void user_enters_the_email() {
+		driver.findElement(By.id("email")).sendKeys("abusayed@gmail.com");
+	  
+	}
+
+	@When("User enters the password")
+	public void user_enters_the_password() throws IOException {
+		driver.findElement(By.id("password")).sendKeys("123456");
+		Utilities.takeScreenShot();
+	}
+
+	@When("Use clicks on the sign in button")
+	public void use_clicks_on_the_sign_in_button() {
+		driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click(); 
+	  
+	}
+
+
+	@Then("The user is successfully logged in and username is displayed")
+	public void the_user_is_successfully_logged_in_and_username_is_displayed() {
+	    
+	  String Expected = "ABU SAYED";
+	  driver.findElement(By.id("username")).getText();
+	Assert.assertEquals("Actual", "Expected");  
+	}
+
+
+}

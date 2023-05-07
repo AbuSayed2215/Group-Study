@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.LogicTest&apos; to &apos;com.Condition&apos;&#x0D;&#x0A;- Original project: &apos;My_FirstProject&apos;&#x0D;&#x0A;- Original element: &apos;My_FirstProject/src/main/java/com.LogicTest&apos;&#x0D;&#x0A;- Renamed element: &apos;My_FirstProject/src/main/java/com.Condition&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.LogicTest&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.LogicTest" name="com.Condition" qualified="false" references="true" stamp="1661707599833" textual="false" version="1.0"/>
+</session>

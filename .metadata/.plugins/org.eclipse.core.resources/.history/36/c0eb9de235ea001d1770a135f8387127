@@ -1,0 +1,10 @@
+package com.api.practicr;
+
+public class ExecuteTest {
+	
+	public static void main(String[] args) {
+		ReadData td = new ReadData();
+		td.GetsetUp();
+	}
+
+}

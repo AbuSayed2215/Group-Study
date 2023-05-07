@@ -1,0 +1,50 @@
+package UnitTesting_API;
+
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.given;
+
+import java.util.HashMap;
+
+import org.hamcrest.*;
+
+public class common_functions {
+	
+	@Test
+	public void getMethod() {
+		given()
+		
+		.when()
+		.get("https://petstore.swagger.io/v2/pet/findByStatus?status=available")
+		
+		.then()
+		.statusCode(200)
+		.contentType("application/json")
+		;
+	}
+	
+	@Test
+	public void createData() {
+		HashMap data = new HashMap();
+		data.put("id", 0);
+		data.put("name", "Tom");
+		
+		
+		
+		
+		given()
+		.contentType("application/json")
+		.body(data)
+		
+		.when()
+		.post("https://petstore.swagger.io/v2/pet")
+		
+		
+		.then()
+		.statusCode(201)
+		.log().body()
+		.extract().response()
+		;
+		
+	}
+
+}

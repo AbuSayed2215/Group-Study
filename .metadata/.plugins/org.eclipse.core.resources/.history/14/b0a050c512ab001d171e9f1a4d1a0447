@@ -1,0 +1,9 @@
+package com.ricjman.hooks;
+
+public class Hooks extends BaseClass {
+
+	@Before
+	public static void initialize() {
+		
+	}
+}

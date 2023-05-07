@@ -1,0 +1,3 @@
+com\richman\runner\Runner.class
+com\richman\hooks\Hooks.class
+com\richman\steps\LoginSteps.class

@@ -1,0 +1,19 @@
+1666319946577	Rename type 'BaseCls'
+1666320083256	Delete element
+1666320201902	Rename resource 'login.feature'
+1666320656408	Rename type 'BaseClass'
+1666326990304	Delete element
+1666376643085	Rename package 'com.Daraz.BaseC'
+1666376660246	Rename package 'com.Daraz.hooks'
+1666376678063	Rename package 'com.Daraz.pageFactory'
+1666376691879	Rename package 'com.Daraz.utilities'
+1666376710092	Rename package 'com.Daraz.runner'
+1666376744491	Rename package 'com.Daraz.stepDeffination'
+1666377015064	Delete element
+1666466591589	Delete element
+1666467690330	Rename package 'com.Testringor.BaseC'
+1666467716484	Rename package 'com.Testringor.hooks'
+1666467732541	Rename package 'com.Testringor.pageFactory'
+1666467746766	Rename package 'com.Testringor.utilities'
+1666467767742	Rename package 'com.Testringor.runner'
+1666467780449	Rename package 'com.Testringor.stepDeffination'

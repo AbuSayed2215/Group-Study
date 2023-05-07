@@ -1,0 +1,43 @@
+package com.richman.sepdef;
+
+import com.richman.base.BaseClass;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoginSteps extends BaseClass{
+
+	@Given("User will open the browser")
+	public void user_will_open_the_browser() {
+	    
+	}
+	
+	@Given("Navigate to the browser")
+	public void navigate_to_the_browser() {
+		
+	}
+	  
+	@When("User click on the profile icon")
+	public void user_click_on_the_profile_icon() {
+		  
+		}
+	
+	@When("User enter valid username")
+	public void user_enter_valid_username() {
+	 
+	}
+	
+	@When("User enter valid password")
+	public void user_enter_valid_password() {
+	    
+	}
+	@When("User click on the signin button")
+	public void user_click_on_the_signin_button() {
+	   
+	}
+	@Then("User should be able to see username on the screen")
+	public void user_should_be_able_to_see_username_on_the_screen() {
+	   
+	}
+}

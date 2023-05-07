@@ -1,0 +1,52 @@
+package com.richman.sepdef;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoginSteps {
+
+
+@Given("User navigates to {string}")
+public void user_navigates_to(String string) {
+    
+ 
+}
+
+@When("User clicks on the Sign In Button")
+public void user_clicks_on_the_sign_in_button() {
+    
+ 
+}
+
+@When("User enters {string} into the email feild")
+public void user_enters_into_the_email_feild(String string) {
+    
+ 
+}
+
+@When("User able to click on submit button")
+public void user_able_to_click_on_submit_button() {
+    
+ 
+}
+
+@When("User enters {string} into the password feild")
+public void user_enters_into_the_password_feild(String string) {
+    
+ 
+}
+
+@When("User clicks on final sign In Button")
+public void user_clicks_on_final_sign_in_button() {
+    
+ 
+}
+
+@Then("User should be able to see username")
+public void user_should_be_able_to_see_username() {
+    
+ 
+}
+
+}

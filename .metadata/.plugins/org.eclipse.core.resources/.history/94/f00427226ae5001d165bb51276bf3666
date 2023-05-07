@@ -1,0 +1,59 @@
+package UnitTesting_API;
+
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.given;
+import java.util.*;
+
+import org.hamcrest.*;
+
+public class common_functions {
+	
+	@Test
+	public void getMethod() {
+		given()
+		
+		.when()
+		.get("https://www.smarttechqa.com/api/products")
+		
+		.then()
+		.statusCode(200)
+		.contentType("application/json") 
+		;
+	}
+	
+	@Test
+	public void createData() {
+		
+		Map <String,String>update = new LinkedHashMap<>();
+		update.put("name", "Sample name");
+		update.put("price", "0");
+		update.put("image", "/images/sample.jpg");
+		update.put("brand", "Sample brand");
+		update.put("category", "Sample category");
+		update.put("countInStock", "0");
+		update.put("numReviews", "0");
+		update.put("description", "Sample description");
+		
+		Map <String, String> auth = new LinkedHashMap<>();
+		auth.put("email", "apiuser@email.com");
+		auth.put("password", "api123");
+		
+		
+		given()
+		.contentType("application/json")
+		.headers(auth)
+		.body(update)
+		
+		.when()
+		.post("https://smarttechqa.com/api/users/login")
+		
+		
+		.then()
+		.statusCode(200)
+		.log().body()
+		.extract().response()
+		;
+		
+	}
+
+}

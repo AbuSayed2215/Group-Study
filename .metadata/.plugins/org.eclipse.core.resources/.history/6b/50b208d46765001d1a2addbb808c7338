@@ -1,0 +1,101 @@
+package com.aarong.stepDeffination;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import com.aarong.BaseC.Base;
+import com.aarong.pageFactory.ElementPage;
+import com.aarong.utilities.Tools;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepDef extends Base {
+
+	  ElementPage pf = PageFactory.initElements(driver, ElementPage.class);
+	
+	
+@Given("User navigates to {string}")
+public void user_navigates_to(String string) {
+	//Base.setUp();
+    
+}
+
+@When("User clicks on the Sign In Button")
+public void user_clicks_on_the_sign_in_button() {
+	pf = PageFactory.initElements(driver, ElementPage.class);
+	pf.getloginButton().click();
+}
+
+@When("User enters {string} into the email feild")
+public void user_enters_into_the_email_feild(String string) {
+	Tools.getHighLighter(pf.getEnterEmail());
+	pf.getEnterEmail().sendKeys("abu.sayed2215@gmail.com");
+	
+}
+@When("User able to click on submit button")
+public void user_able_to_click_on_submit_button() {
+	 pf.getSubmit().click();
+}
+   
+
+@When("User enters {string} into the password feild")
+public void user_enters_into_the_password_feild(String string) {
+	 pf.getPassword().sendKeys("Asmrasel11");
+    
+}
+
+@When("User clicks on final sign In Button")
+public void user_clicks_on_final_sign_in_button() {
+	 pf.getEnterSingin().click();
+    
+}
+
+@Then("User should be able to see username")
+public void user_should_be_able_to_see_username() {
+
+}
+@When("User able to click on the search icon")
+public void user_able_to_click_on_the_search_icon() {
+	pf = PageFactory.initElements(driver, ElementPage.class);
+   pf.getSearchbutton().click();
+   
+}
+
+@When("Use enter the keywords {string}")
+public void use_enter_the_keywords(String string) {
+   pf.getSearchBox().sendKeys("panjabi");
+   pf.getSearchSubmit().click();
+}
+
+@When("Item will appear in the landing page")
+public void item_will_appear_in_the_landing_page() {
+   
+   
+}
+
+
+@When("User is able to click on the iteam")
+public void user_is_able_to_click_on_the_iteam() {
+  pf.getClickonIteam().click();
+  ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+  driver.switchTo().window(tabs.get(1));
+  String expected = "Mustard Cotton Panjabi";
+  String actual = pf.getGetPanjabi().getText();
+  Assert.assertEquals(actual, expected);
+  driver.close();
+  driver.switchTo().window(tabs.get(0));
+}
+
+@Then("User should be able to see more about the price")
+public void user_should_be_able_to_see_more_about_the_price() {
+ 
+   
+}
+
+
+}

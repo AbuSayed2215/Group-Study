@@ -1,0 +1,23 @@
+package UnitTesting_API;
+
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.given;
+import org.hamcrest.*;
+
+public class common_functions {
+	
+	@Test
+	public void getMethod() {
+		given()
+		
+		.when()
+		.get("https://petstore.swagger.io/v2/pet/findByStatus?status=available")
+		
+		.then()
+		.statusCode(200)
+		.contentType("application/json");
+		
+		
+	}
+
+}

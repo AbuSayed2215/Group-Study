@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\abusa\eclipse-workspace\API_Sarower\src\test\java\com\curd\function\ReadData.java"/>
+			<item value="C:\Users\abusa\eclipse-workspace\HomePractice"/>
+			<item value="C:\Users\abusa\git\repository\TechShop_Project\src\main\java\SmartTechQA\DarazBD.java"/>
+			<item value="C:\Users\abusa\eclipse-workspace\MyPractice\src\main\java\com\Abstraction\ClassB.java"/>
+			<item value="C:\Users\abusa\eclipse-workspace\Hot_Wire\src\main\java\com\constractor\Apartments.java"/>
+			<item value="C:\Users\abusa\eclipse-workspace\My_FirstProject\src\test\java\DataTestPractice\StaticVariable.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="Bootcamp_API"/>
+			<item value="api_sarower"/>
+			<item value="API_Project"/>
+			<item value="Com.ReachMan"/>
+			<item value="Home_work"/>
+			<item value="Hot_Wire"/>
+			<item value="com_java_programming"/>
+			<item value="Class_Frist_Project"/>
+			<item value="com.daraz_Automation"/>
+			<item value="Com_FoodPanda_Project"/>
+			<item value="My_Automation_Project"/>
+			<item value="com.practice"/>
+			<item value="com.TechShopIT"/>
+			<item value="com.TechShopqa"/>
+			<item value="com.SmartTechqaTechshop"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Bootcamp_API"/>
+			<item value="API_Sarower"/>
+			<item value="API_Practice"/>
+			<item value="ReachMan_Automation"/>
+			<item value="Home_Work"/>
+			<item value="Yellow_Team_Automation"/>
+			<item value="java_proggramming"/>
+			<item value="Tech_Shop_QA"/>
+			<item value="Daraz_Automation_Project"/>
+			<item value="Food_PandaBD"/>
+			<item value="Food_Panda"/>
+			<item value="HomePractice"/>
+			<item value="TechShop_Project"/>
+			<item value="TechShopQA"/>
+			<item value="Techshop_project"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

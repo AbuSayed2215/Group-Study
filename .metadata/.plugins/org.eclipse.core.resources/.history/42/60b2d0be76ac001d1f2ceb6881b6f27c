@@ -1,0 +1,7 @@
+package com.richman.sepdef;
+
+import com.richman.base.BaseClass;
+
+public class Steps extends BaseClass{
+
+}

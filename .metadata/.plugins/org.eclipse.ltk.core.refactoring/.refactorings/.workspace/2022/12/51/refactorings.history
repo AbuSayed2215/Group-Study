@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Yellow_Team_Automation&apos;" deleteContents="false" description="Delete resource &apos;Yellow_Team_Automation&apos;" element1="/Yellow_Team_Automation" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1670898748574"/>
+</session>
